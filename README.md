@@ -1,4 +1,4 @@
-# Real Time Energy Monitoring System using iot
+# Real Time Energy Monitoring System using IoT
 
 # Design Project
 
