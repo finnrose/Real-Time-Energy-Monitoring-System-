@@ -42,7 +42,7 @@ class DurationPage extends StatelessWidget {
             ],
           ),
         ),
-        ),
+      ),
     );
   }
 }
