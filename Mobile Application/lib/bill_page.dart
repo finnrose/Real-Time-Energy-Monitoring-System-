@@ -49,7 +49,7 @@ class BillPage extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 10,
+                height: 20,
               ),
               Padding(
                 padding: const EdgeInsets.all(10.0),
