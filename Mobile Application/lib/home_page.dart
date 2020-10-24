@@ -13,8 +13,7 @@ class HomePage extends StatelessWidget {
         body: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
-            //mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
+           children: <Widget>[
               Container(
                 height: (MediaQuery.of(context).size.height) * 0.35,
                 color: Color(0xffF75590),
@@ -35,8 +34,8 @@ class HomePage extends StatelessWidget {
               SvgPicture.asset(
                 "images/electricity(1).svg",
                 color: Color(0xFF4A306D),
-                height: (MediaQuery.of(context).size.height) * 0.35,
-                width: (MediaQuery.of(context).size.width) * 0.35,
+                height: (MediaQuery.of(context).size.height) * 0.4,
+                width: (MediaQuery.of(context).size.width) * 0.4,
               ),
             ],
           ),
