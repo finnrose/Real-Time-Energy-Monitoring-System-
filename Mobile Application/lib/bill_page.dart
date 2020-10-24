@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:smart_energy_meter/home_page.dart';
 import 'components/round_button.dart';
 import 'components/row.dart';
 
