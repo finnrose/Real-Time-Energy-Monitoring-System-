@@ -23,14 +23,14 @@ class DurationPage extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.all(10.0),
-                child: TextTimeInput('FROM:'),
+                child: TextTimeInput("FROM"),
               ),
               SizedBox(
                 height: 10,
               ),
               Padding(
                 padding: const EdgeInsets.all(10.0),
-                child: TextTimeInput('TO:'),
+                child: TextTimeInput("TO"),
               ),
               SizedBox(
                 height: 20,
