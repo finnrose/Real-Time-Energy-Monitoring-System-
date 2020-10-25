@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'file:///F:/Project/energy_monitoring/lib/notifications/notification_dialog.dart';
+import 'package:energy_monitoring/notifications/notification_dialog.dart';
 
 class TextTimeInput extends StatefulWidget {
   final String text;
