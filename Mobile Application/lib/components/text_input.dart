@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:energy_monitoring/notifications/notification_dialog.dart';
+import 'package:smart_energy_meter/notifications/notification_dialog.dart';
 
 class TextTimeInput extends StatefulWidget {
   final String text;
@@ -31,10 +31,14 @@ class _TextTimeInputState extends State<TextTimeInput> {
         child: TextFormField(
           autocorrect: true,
           decoration: InputDecoration(
+            labelText: '${widget.text} ${dateFormat.format(selectedDate)}',
+            labelStyle: TextStyle(
+                color: Colors.black, fontSize: 18, fontWeight: FontWeight.w500),
+            //suffix: Text('FROM $selectedDate'),
             suffixIcon: Icon(
               Icons.access_time,
               color: Color(0xff4A306D),
-              size: 25,
+              size: 30,
             ),
             hintText: widget.text,
             hintStyle: TextStyle(color: Colors.grey, fontSize: 18),
@@ -54,3 +58,4 @@ class _TextTimeInputState extends State<TextTimeInput> {
     );
   }
 }
+
