@@ -19,18 +19,18 @@ class DurationPage extends StatelessWidget {
                 color: Color(0xffF75590),
               ),
               SizedBox(
-                height: 20,
+                height: 15,
               ),
               Padding(
                 padding: const EdgeInsets.all(10.0),
-                child: TextTimeInput("FROM"),
+                child: TextTimeInput('FROM\t\t\t\t\t\t\t\t'),
               ),
               SizedBox(
                 height: 10,
               ),
               Padding(
                 padding: const EdgeInsets.all(10.0),
-                child: TextTimeInput("TO"),
+                child: TextTimeInput('TO\t\t\t\t\t\t\t\t\t\t\t\t\t'),
               ),
               SizedBox(
                 height: 20,
@@ -58,3 +58,4 @@ class DurationPage extends StatelessWidget {
     );
   }
 }
+
