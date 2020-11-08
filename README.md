@@ -28,7 +28,7 @@ When the supply is on, the PZEM module starts monitoring the various electrical 
 <br>
 <br>
 To know more about the hardware components click the corresponding buttons👇🏻
-<button>PZEM-004T</button>
-<button>Voltage Level Converter</button>
-<button onclick="https://randomnerdtutorials.com/projects-esp8266/">NodeMCU ESP8266</button>
+<a href="https://www.nn-digital.com/en/blog/2019/08/07/get-to-know-pzem-004t-electronic-modules-for-electrical-measurement-tools/" target="_blank">PZEM-004T</a>
+<a href="https://learn.sparkfun.com/tutorials/bi-directional-logic-level-converter-hookup-guide/all" target="_blank">Voltage Level Converter</a>
+<a href="https://randomnerdtutorials.com/projects-esp8266/" target="_blank">NodeMCU ESP8266</a>
 
