@@ -30,7 +30,7 @@ When the supply is on, the PZEM module starts monitoring the various electrical 
 To know more about the hardware components click below👇🏻
 <br><br>
 
-<button> <a href="https://learn.sparkfun.com/tutorials/bi-directional-logic-level-converter-hookup-guide/all" target="_blank">Voltage Level Converter</a></button>
+[<img src ="https://img.shields.io/badge/Voltage-%23.svg?&style=for-the-badge&logo=&logoColor=white%22">](https://learn.sparkfun.com/tutorials/bi-directional-logic-level-converter-hookup-guide/all)
 
 <a href="https://learn.sparkfun.com/tutorials/bi-directional-logic-level-converter-hookup-guide/all" target="_blank">Voltage Level Converter</a>
 <a href="https://randomnerdtutorials.com/projects-esp8266/" target="_blank">NodeMCU ESP8266</a>
