@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'components/round_button.dart';
 import 'components/text_input.dart';
 import 'bill_page.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class DurationPage extends StatelessWidget {
   @override
@@ -12,44 +13,79 @@ class DurationPage extends StatelessWidget {
         backgroundColor: Colors.white,
         body: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: Column(
+          child: ListView(
             children: <Widget>[
-              Container(
-                height: (MediaQuery.of(context).size.height) * 0.35,
-                color: Color(0xffF75590),
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Center(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text(
+                        'SMART\nMETER',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          shadows: [
+                            Shadow(
+                              color: Colors.deepPurple,
+                              offset: Offset(2, 2),
+                              blurRadius: 6,
+                            )
+                          ],
+                          color: Colors.deepPurple,
+                          fontSize: 30,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      SvgPicture.asset(
+                        "images/power.svg",
+                        color: Color(0xff77A7EF),
+                        //Color(0xff281B3A),
+                        height: (MediaQuery.of(context).size.height) * 0.09,
+                        width: (MediaQuery.of(context).size.width) * 0.09,
+                      ),
+                    ],
+                  ),
+                ),
               ),
               SizedBox(
                 height: 15,
               ),
               Padding(
                 padding: const EdgeInsets.all(10.0),
-                child: TextTimeInput('FROM\t\t\t\t\t\t\t\t'),
+                child: TextTimeInput('FROM'),
               ),
               SizedBox(
                 height: 10,
               ),
               Padding(
                 padding: const EdgeInsets.all(10.0),
-                child: TextTimeInput('TO\t\t\t\t\t\t\t\t\t\t\t\t\t'),
+                child: TextTimeInput('TO'),
               ),
               SizedBox(
                 height: 20,
               ),
               Padding(
                 padding: const EdgeInsets.all(10.0),
-                child: RoundButton('GO!', () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => BillPage()));
-                }),
+                child: RoundButton(
+                  'GO!',
+                  () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => BillPage()));
+                  },
+                ),
               ),
               SizedBox(
                 height: 10,
               ),
               Padding(
                 padding: const EdgeInsets.all(10.0),
-                child: RoundButton('BACK', () {
-                  Navigator.pop(context);
-                }),
+                child: RoundButton(
+                  'BACK',
+                  () {
+                    Navigator.pop(context);
+                  },
+                ),
               ),
             ],
           ),
@@ -58,4 +94,3 @@ class DurationPage extends StatelessWidget {
     );
   }
 }
-
