@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class Row_fn extends StatelessWidget {
+class RowFn extends StatelessWidget {
   final String keys;
   final String values;
-  Row_fn(this.keys, this.values);
+  RowFn(this.keys, this.values);
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -17,18 +17,18 @@ class Row_fn extends StatelessWidget {
                 Text(
                   keys,
                   style: TextStyle(
-                      color: Color(0xff3A2556),
+                      color: Colors.deepPurple,
                       fontFamily: 'Montserrat',
                       letterSpacing: 0.5,
-                      fontSize: 18,
+                      fontSize: 15,
                       fontWeight: FontWeight.w700),
                 ),
                 Text(
                   values,
                   style: TextStyle(
-                      color: Color(0xff3A2556),
+                      color: Colors.deepPurple,
                       fontFamily: 'Montserrat',
-                      fontSize: 18,
+                      fontSize: 15,
                       fontWeight: FontWeight.w700,
                       letterSpacing: 0.5),
                 ),
