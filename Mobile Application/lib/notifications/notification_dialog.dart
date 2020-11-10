@@ -13,9 +13,9 @@ Future<TimeOfDay> _selectTime(BuildContext context,
       builder: (BuildContext context, Widget child) {
         return Theme(
           data: ThemeData.light().copyWith(
-            primaryColor: Color(0xff36244F),
-            accentColor: Color(0xff36244F),
-            colorScheme: ColorScheme.light(primary: const Color(0xff36244F)),
+            primaryColor: Colors.deepPurple,
+            accentColor: Colors.deepPurple,
+            colorScheme: ColorScheme.light(primary: Colors.deepPurple),
             buttonTheme: ButtonThemeData(textTheme: ButtonTextTheme.primary),
           ),
           child: child,
@@ -36,10 +36,11 @@ Future<DateTime> _selectDateTime(BuildContext context,
       builder: (BuildContext context, Widget child) {
         return Theme(
             data: ThemeData.light().copyWith(
-              primaryColor: Color(0xff36244F),
-              accentColor: Color(0xff36244F),
-              colorScheme: ColorScheme.light(primary: const Color(0xff36244F)),
+              primaryColor: Color(0xff77A7EF),
+              accentColor: Color(0xff77A7EF),
+              colorScheme: ColorScheme.light(primary: Colors.deepPurple),
               buttonTheme: ButtonThemeData(textTheme: ButtonTextTheme.primary),
+              canvasColor: Color(0xFFFDEECC),
             ),
             child: child);
       });
@@ -51,7 +52,7 @@ showDateTimeDialog(
   @required DateTime initialDate,
 }) {
   final dialog = Dialog(
-    backgroundColor: Color(0xFFCEC2FF),
+    backgroundColor: Color(0xFFFDEECC),
     child: DateTimeDialog(
         onSelectedDate: onSelectedDate, initialDate: initialDate),
   );
@@ -92,7 +93,7 @@ class _DateTimeDialogState extends State<DateTimeDialog> {
             Text(
               'Select date and time',
               style: TextStyle(
-                color: Color(0xff36244F),
+                color: Colors.deepPurple,
                 fontWeight: FontWeight.w600,
                 fontSize: 18,
               ),
@@ -102,11 +103,15 @@ class _DateTimeDialogState extends State<DateTimeDialog> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 RaisedButton(
-                  color: Color(0xff36244F),
+                  elevation: 15,
+                  color: Colors.deepPurple,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                  ),
                   child: Text(
                     DateFormat('dd-MM-yyyy').format(selectedDate),
                     style: TextStyle(
-                      color: Colors.white,
+                      color: Color(0xFFFDEECC),
                     ),
                   ),
                   onPressed: () async {
@@ -129,10 +134,14 @@ class _DateTimeDialogState extends State<DateTimeDialog> {
                 ),
                 const SizedBox(width: 8),
                 RaisedButton(
-                  color: Color(0xff36244F),
+                  elevation: 15,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                  ),
+                  color: Colors.deepPurple,
                   child: Text(
                     DateFormat('HH:mm').format(selectedDate),
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(color: Color(0xFFFDEECC)),
                   ),
                   onPressed: () async {
                     final time =
@@ -155,12 +164,12 @@ class _DateTimeDialogState extends State<DateTimeDialog> {
             ),
             const SizedBox(height: 16),
             OutlineButton(
-              color: Color(0xff36244F),
-              borderSide: BorderSide(width: 3),
+              color: Colors.deepPurple,
+              borderSide: BorderSide(width: 3, color: Colors.deepPurple),
               child: Text(
                 'OK',
                 style: TextStyle(
-                  color: Color(0xff36244F),
+                  color: Colors.deepPurple,
                 ),
               ),
               onPressed: () {
@@ -169,7 +178,8 @@ class _DateTimeDialogState extends State<DateTimeDialog> {
                 });
                 Navigator.of(context).pop();
               },
-              highlightColor: Colors.orange,
+              highlightColor: Color(0xffFDBBD6),
+              highlightedBorderColor: Colors.pink,
             ),
           ],
         ),
