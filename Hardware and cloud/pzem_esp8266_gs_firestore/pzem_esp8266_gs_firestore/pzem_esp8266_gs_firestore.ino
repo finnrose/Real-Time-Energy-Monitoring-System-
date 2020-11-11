@@ -5,8 +5,8 @@
 // Replace with your SSID and Password
 PZEM004Tv30 pzem(5, 4);
 String readString;
-const char* ssid = "dlink_DWR-910_7583";
-const char* password = "nizshe3618vfone";
+const char* ssid = "YOUR WIFI SSID";
+const char* password = "YOUR WIFI PASSWORD";
 const char* host = "script.google.com";
 const int httpsPort = 443;
 WiFiClientSecure client;
