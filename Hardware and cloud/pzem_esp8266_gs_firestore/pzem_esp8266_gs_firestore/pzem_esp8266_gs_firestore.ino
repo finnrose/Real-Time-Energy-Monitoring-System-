@@ -11,12 +11,12 @@ const char* host = "script.google.com";
 const int httpsPort = 443;
 WiFiClientSecure client;
 const char* fingerprint = "46 B2 C3 44 9C 59 09 8B 01 B6 F8 BD 4C FB 00 74 91 2F EF F6";
-String GAS_ID = "AKfycbz59LV3BAGCYFJyhKEXZf9aJ4RFnoHdyFKs2_JEdKAJ_SeAZ2AS";  // Replace by your GAS service id
-//https://script.google.com/macros/s/AKfycbz59LV3BAGCYFJyhKEXZf9aJ4RFnoHdyFKs2_JEdKAJ_SeAZ2AS/exec
+String GAS_ID = "YOUR GAS ID";  // Replace by your GAS service id
+
 
 // Time to sleep
 uint64_t uS_TO_S_FACTOR = 1000000;  // Conversion factor for micro seconds to seconds
-// sleep for 1 hours = 3600 seconds
+// sleep for 1 hour = 3600 seconds
 uint64_t TIME_TO_SLEEP = 3600;
 
 void setup() {
@@ -90,9 +90,7 @@ void getvalue(){
   } else {
   Serial.println("certificate doesn't match");
   }
-  //String string_x     =  String(x, DEC);
- 
-  //String string_y     =  String(y, DEC);
+  
   String url = "/macros/s/" + GAS_ID + "/exec?energy=" + x;
   Serial.print("requesting URL: ");
   Serial.println(url);
