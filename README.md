@@ -38,6 +38,8 @@ To know more about the hardware components click below👇🏻
 
 ## App preview
 
+### Interface
 
-<img src="pics/">
+
+<img src="pics/smarthome.jpeg" width = "300px" height = auto>
 
