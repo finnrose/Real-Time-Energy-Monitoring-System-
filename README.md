@@ -41,5 +41,5 @@ To know more about the hardware components click below👇🏻
 ### Interface
 
 
-<img src="pics/smarthome.jpeg" width = "300px" height = auto padding = "10px">  <img src="pics/smartspark.jpeg" width = "300px" height = auto>
+<img src="pics/smarthome.jpeg" width = "300px" height = auto padding = "10px">  <img src="pics/smartspark.jpeg" width = "300px" height = auto> <img src="pics/date (2).jpeg" width = "300px" height = auto>
 
