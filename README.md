@@ -59,6 +59,5 @@ To know more about the hardware components click below👇🏻
 ### Output preview
 
 
-
-<img src="pics/WhatsApp Image 2020-11-11 at 21.52.09.jpeg" width = "300px" height = auto>   <img src="pics/bill.jpeg" width = "300px" height = auto>
+<img src="pics/bill.jpeg" width = "300px" height = auto>  <img src="pics/WhatsApp Image 2020-11-11 at 21.52.09.jpeg" width = "300px" height = auto>
 
