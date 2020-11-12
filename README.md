@@ -43,8 +43,11 @@ To know more about the hardware components click below👇🏻
 
 <img src="pics/smarthome.jpeg" width = "300px" height = auto> <img src="pics/date (2).jpeg" width = "300px" height = auto>
 
+<br>
+<br>
 
 ### Giving user inputs
+
 
 <img src="pics/date.jpeg" width = "300px" height = auto>
 
