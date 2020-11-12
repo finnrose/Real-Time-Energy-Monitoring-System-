@@ -51,6 +51,9 @@ To know more about the hardware components click below👇🏻
 
 <img src="pics/date.jpeg" width = "300px" height = auto>
 
+<br>
+<br>
+
 
 
 ### Output preview
