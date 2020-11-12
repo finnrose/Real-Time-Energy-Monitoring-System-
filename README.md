@@ -49,7 +49,7 @@ To know more about the hardware components click below👇🏻
 ### Giving user inputs
 
 
-<img src="pics/date.jpeg" width = "300px" height = auto> <img src="pics/dpicer.jpeg" width = "300px" height = auto>  <img src="pics/tpick.jpeg" width = "300px" height = auto>
+<img src="pics/date.jpeg" width = "200px" height = auto> <img src="pics/dpicer.jpeg" width = "200px" height = auto>  <img src="pics/tpick.jpeg" width = "200px" height = auto>
 
 <br>
 <br>
